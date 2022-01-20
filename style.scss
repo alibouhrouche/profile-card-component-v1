@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {box-sizing: border-box;}
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: darkcyan;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg);
+    background-position: top -500px right 45vw, bottom -500px left 45vw;
+    background-repeat: no-repeat;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: white;
+    max-width: 300px;
+    width: 100%;
+    margin: 10px;
+}
+
+.card-heading {
+    padding-top: 40%;
+    height: 0;
+    width: 100%;
+    background-image: url(./images/bg-pattern-card.svg);
+    display: flex;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-picture {
+    background: white;
+    margin-top: -48px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card-content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0rem 3rem;
+    padding-top: .5rem;
+}
+
+.card-name {
+    margin: 0;
+    font-size: 18px;
+    color: $very-dark-desaturated-blue;
+}
+
+.card-age {
+    color: $dark-gray;
+}
+
+.card-city {
+    color: $dark-gray;
+}
+
+.card-stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.25);
+    width: 100%;
+    padding: 6px;
+    gap: 40px;
+}
+
+.card-stat__stat {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+.card-stat__value {
+    font-size: 18px;
+    font-weight: 700;
+    color: $very-dark-desaturated-blue;
+}
+
+.card-stat__name {
+    font-size: 14px;
+    font-weight: 400;
+    color: $dark-gray;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: white;
+}
